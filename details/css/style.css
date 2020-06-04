@@ -1,0 +1,321 @@
+
+header {
+	background-color:#242424;
+	height: 90px;
+}
+
+.logo-menu img{
+	width: 200px;
+	height: 35px;
+	margin-top: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.topnav a::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3B97C9;
+    transition: width .3s;
+}
+
+.topnav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	text-decoration:none;
+ 	color: #3B97C9;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(.icon) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.transition {
+	margin-top: 20px;
+}
+
+.transition a{
+	color:#7D7D7D;
+}
+
+.transition a:hover{
+	text-decoration: none;
+	color:#7D7D7D;
+}
+
+.transition p{
+	color:#3A6BF9;
+}
+
+.articles .card .btn{
+	font-weight: bold;
+    font-size: 15px;
+    width: 135px;
+    border: 2px solid;
+    border-radius: 20px;
+    color: #007bff;
+    background-color: #fff;
+    border-color: #007bff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.articles .card .btn:hover {
+	background-color: #007bff;
+	color:#fff;
+}
+
+.articles .card-title{
+	line-height: 40px;
+	color:#626262;
+}
+.articles .card-text{
+	line-height: 26px;
+	color:#7D7D7D;
+}
+
+.articles .card {
+	margin-top:35px;
+	border-radius: 0;
+}
+
+.articles .card-body{
+	box-shadow: 1px 3px 8px -1px rgba(0,0,0,0.27);
+}
+
+.search-part{
+	margin-top: 36px;
+	border:1px solid #DBDBDB;
+	background-color:#fff;
+	padding: 25px;
+}
+
+.search-part h5::after{
+	content: '' ;
+	display:block;
+	width:34px;
+	height: 3px;
+	margin:15px 0;
+	background-color:#3A6BF9;
+}
+
+.search-part input{
+	font-size: 13px;
+    border: none;
+    background-color: #F6F6F6;
+    height: 46px;
+}
+
+.search-part span{
+	background: none;
+    background-color: #f6f6f6;
+    border: none;
+}
+
+.search-part span i{
+	font-size: 21px;
+	color:;
+}
+
+.recent-posts{
+	background-color: #fff;
+    border: 1px solid#DBDBDB;
+    margin-top: 30px;
+}
+
+.recent-posts h5{
+	margin-top: 20px;
+    margin-left: 18px;
+}
+
+.recent-posts h5::after{
+	content: '' ;
+	display:block;
+	width:34px;
+	height: 3px;
+	margin:15px 0;
+	background-color:#3A6BF9;
+}
+
+.recent-posts .list-group{
+	font-size: 14px;
+}
+
+.recent-posts .list-group a:hover{
+	text-decoration: none;
+}
+
+.article-categories {
+	background-color: #fff;
+    border: 1px solid #DBDBDB;
+    margin-top: 30px;
+}
+
+.article-categories h5{
+	margin-top: 20px;
+    margin-left: 18px;
+}
+
+.article-categories h5::after{
+	content: '' ;
+	display:block;
+	width:34px;
+	height: 3px;
+	margin:15px 0;
+	background-color:#3A6BF9;
+}
+
+.article-categories .list-group a{
+	font-size: 14px; 
+	color:#7D7D7D;
+}
+
+.article-categories .list-group a:hover {
+	color:#3A6BF9;
+	text-decoration: none;
+}
+
+.next{
+	float: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.next a{
+	color:#272727;
+	font-weight: bold;
+}
+
+.next a:hover{
+	text-decoration: none;
+}
+
+footer {
+	background-color:#272727;
+}
+
+footer .list-group-item{
+	background:none;
+}
+
+footer ul a{
+	color:#DDDCD8;
+}
+
+footer ul a:hover{
+	text-decoration:none;
+	transition:.3s;
+	color:#5097FF;
+}
+
+footer .list-diff{
+	font-size: 14px;
+}
+
+footer img{
+	width:170px;
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+footer h5{
+	margin-left: 20px;
+	color:#f2f2f2;
+	margin-top:53px;
+	margin-bottom:30px;
+}
+
+.vertical::before{
+	content: '' ; 
+	position: absolute;
+	display:block;
+	width:1px;
+	height: 590px;
+	margin-top:45px;
+	margin-left: -15px;
+	background-color:#23221E;
+}
+
+.end{
+	background-color: #2D2A27;
+	height: 70px;
+}
+
+.years , .writers , .employees , .platform{
+	border:1px solid grey;
+}
+
+.flex-container {
+	margin-top:50px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.flex-container > div{
+	border:1px solid grey;
+	width: 230px;
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.flex-container > div:hover{
+	background-color:#1B1B1B;
+	border:none;
+	transition:1s;
+}
+
+.flex-container h2 , h6 {
+	color:#f2f2f2;
+}
+.flex-container h2{
+	font-weight: bold;
+}
